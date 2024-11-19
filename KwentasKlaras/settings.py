@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'KwentasKlarasApp',
+    'django_browser_reload',
     'tailwind',
     'theme',
 ]
