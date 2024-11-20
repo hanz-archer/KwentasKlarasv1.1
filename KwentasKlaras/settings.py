@@ -133,7 +133,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"  # Example path for production
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),  # This points to the global static directory in your project folder
+    os.path.join(BASE_DIR, "KwentasKlaras", "static"),  # Correct path based on your folder structure
 ]
 
 # Default primary key field type
