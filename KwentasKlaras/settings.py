@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-))6$lrt6*mvqrt^9et9z)s$=x26x%@esdq3==(w!d6+v%cm^3z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -67,7 +67,7 @@ ROOT_URLCONF = 'KwentasKlaras.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Ensure this is included
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,7 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / "staticfiles"  # Example path for production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Collect static files here
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "KwentasKlaras", "static"),  # Correct path based on your folder structure
